@@ -1,9 +1,9 @@
 export const headerContent = {
   nav: [
     { label: "Home", href: "#" },
-    { label: "Products", href: "#products", disabled: true },
-    { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
+    { label: "Products", href: "#", disabled: true },
+    { label: "About", href: "#" },
+    { label: "Contact", href: "#" },
   ],
   logoSrc: "/images/sample-logo.svg",
 } as const;
