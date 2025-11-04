@@ -6,7 +6,7 @@ export type ProcessStep = {
 
 export type ProcessTimelineProps = {
   title: string;
-  steps: ProcessStep[];
+  steps: ReadonlyArray<ProcessStep>;
 };
 
 export default function ProcessTimeline({ title, steps }: ProcessTimelineProps) {

@@ -9,7 +9,7 @@ export type ContactAction = {
 export type ContactCtaProps = {
   title: string;
   subtitle: string;
-  ctas: ContactAction[];
+  ctas: ReadonlyArray<ContactAction>;
   qrImageSrc: string;
   qrAlt: string;
   note?: string;

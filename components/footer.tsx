@@ -7,7 +7,7 @@ export type FooterLink = {
 
 export type FooterColumn = {
   title: string;
-  links: FooterLink[];
+  links: ReadonlyArray<FooterLink>;
 };
 
 export type FooterSocial = {
@@ -17,8 +17,8 @@ export type FooterSocial = {
 
 export type FooterProps = {
   address: string;
-  columns: FooterColumn[];
-  socials: FooterSocial[];
+  columns: ReadonlyArray<FooterColumn>;
+  socials: ReadonlyArray<FooterSocial>;
   legal: string;
 };
 

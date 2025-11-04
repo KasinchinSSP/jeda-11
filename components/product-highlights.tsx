@@ -5,11 +5,11 @@ export type ProductHighlight = {
   description: string;
   image: string;
   imageAlt: string;
-  spec: string[];
+  spec: ReadonlyArray<string>;
 };
 
 export type ProductHighlightsProps = {
-  items: ProductHighlight[];
+  items: ReadonlyArray<ProductHighlight>;
 };
 
 export default function ProductHighlights({ items }: ProductHighlightsProps) {

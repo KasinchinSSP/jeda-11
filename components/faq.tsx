@@ -9,7 +9,7 @@ export type FaqItem = {
 
 export type FaqProps = {
   title: string;
-  items: FaqItem[];
+  items: ReadonlyArray<FaqItem>;
 };
 
 export default function Faq({ title, items }: FaqProps) {

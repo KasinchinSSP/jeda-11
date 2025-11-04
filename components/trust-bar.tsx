@@ -10,8 +10,8 @@ export type TrustBadge = {
 };
 
 export type TrustBarProps = {
-  logos: TrustLogo[];
-  badges?: TrustBadge[];
+  logos: ReadonlyArray<TrustLogo>;
+  badges?: ReadonlyArray<TrustBadge>;
   caption?: string;
 };
 

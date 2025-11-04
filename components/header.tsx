@@ -11,7 +11,7 @@ export type HeaderNavItem = {
 };
 
 export type HeaderProps = {
-  nav: HeaderNavItem[];
+  nav: ReadonlyArray<HeaderNavItem>;
   logoSrc: string;
 };
 

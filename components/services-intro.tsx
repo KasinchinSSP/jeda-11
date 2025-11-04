@@ -7,7 +7,7 @@ export type ServiceItem = {
 export type ServicesIntroProps = {
   title: string;
   intro: string;
-  services: ServiceItem[];
+  services: ReadonlyArray<ServiceItem>;
   note?: string;
 };
 
