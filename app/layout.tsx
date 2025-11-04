@@ -20,21 +20,21 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://example.com"),
   title: {
-    default: "JEDA 11 (Sample)",
-    template: "%s — JEDA 11 (Sample)",
+    default: "GIDA 11 (Sample)",
+    template: "%s — GIDA 11 (Sample)",
   },
-  description: "Sample-only demo landing page for JEDA 11.",
+  description: "Sample-only demo landing page for GIDA 11.",
   robots: {
     index: false,
     follow: false,
   },
   openGraph: {
-    title: "JEDA 11 (Sample)",
+    title: "GIDA 11 (Sample)",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "JEDA 11 (Sample)",
+    title: "GIDA 11 (Sample)",
   },
 };
 
