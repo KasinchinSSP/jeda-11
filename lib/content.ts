@@ -9,7 +9,7 @@ export const headerContent = {
 } as const;
 
 export const heroContent = {
-  eyebrow: "GIDA 11 (Sample)",
+  eyebrow: "JEDA 11 (Sample)",
   title: "โซลูชันครบวงจรสำหรับธุรกิจผลิตภัณฑ์เสริมอาหาร",
   subtitle: "One-stop service: R&D • บรรจุภัณฑ์ • เอกสารจดแจ้ง • ผลิต • ส่งมอบ (ตัวอย่าง)",
   video: {
@@ -155,7 +155,7 @@ export const footerContent = {
     { icon: "line", href: "#" },
     { icon: "mail", href: "#" },
   ],
-  legal: "© 2025 GIDA 11 (Sample). All rights reserved.",
+  legal: "© 2025 JEDA 11 (Sample). All rights reserved.",
 } as const;
 
 export const siteContent = {

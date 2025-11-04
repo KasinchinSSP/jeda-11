@@ -28,7 +28,7 @@ export default function Footer({ address, columns, socials, legal }: FooterProps
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
         <div className="grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
           <div className="space-y-6">
-            <h2 className="text-2xl font-semibold">GIDA 11 (Sample)</h2>
+            <h2 className="text-2xl font-semibold">JEDA 11 (Sample)</h2>
             <p className="max-w-sm text-sm text-white/70 sm:text-base">{address}</p>
             <div className="flex flex-wrap items-center gap-3">
               {socials.map((social) => (

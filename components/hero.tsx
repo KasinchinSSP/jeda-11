@@ -44,6 +44,7 @@ export default function Hero({ eyebrow, title, subtitle, video, overlay }: HeroP
             muted
             playsInline
             poster={landscape.poster}
+            aria-hidden
           >
             <source src={landscape.webm} type="video/webm" />
             <source src={landscape.mp4} type="video/mp4" />
@@ -55,6 +56,7 @@ export default function Hero({ eyebrow, title, subtitle, video, overlay }: HeroP
             muted
             playsInline
             poster={portrait.poster}
+            aria-hidden
           >
             <source src={portrait.webm} type="video/webm" />
             <source src={portrait.mp4} type="video/mp4" />

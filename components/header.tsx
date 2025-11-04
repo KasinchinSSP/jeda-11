@@ -25,14 +25,14 @@ export default function Header({ nav, logoSrc }: HeaderProps) {
           <div className="relative h-10 w-32">
             <Image
               src={logoSrc}
-              alt="GIDA 11 Sample Logo"
+              alt="JEDA 11 Sample Logo"
               fill
               sizes="128px"
               className="object-contain"
               priority
             />
           </div>
-          <span className="sr-only">GIDA 11</span>
+          <span className="sr-only">JEDA 11</span>
         </div>
         <button
           type="button"
