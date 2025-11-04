@@ -11,7 +11,7 @@ const prompt = Prompt({
 });
 
 const inter = Inter({
-  subsets: ["latin", "thai"],
+  subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-body",
   display: "swap",
