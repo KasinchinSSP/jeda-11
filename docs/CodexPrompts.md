@@ -1,6 +1,6 @@
-# Codex Prompts — GIDA 11 Website (Home Sample Build)
+# Codex Prompts — JEDA 11 Website (Home Sample Build)
 
-> Purpose: Generate a complete sample Home page for GIDA 11 using Next.js 15 + Tailwind CSS from the three reference specs:
+> Purpose: Generate a complete sample Home page for JEDA 11 using Next.js 15 + Tailwind CSS from the three reference specs:
 >
 > 1. **ArchitectureContract.md (v0.3)**
 > 2. **ContentMap.md (Sample v1.1)**
@@ -92,11 +92,11 @@ Update app/layout.tsx:
 
 export const metadata = {
   metadataBase: new URL('https://example.com'),
-  title: { default: 'GIDA 11 (Sample)', template: '%s — GIDA 11 (Sample)' },
-  description: 'Sample-only demo landing page for GIDA 11.',
+  title: { default: 'JEDA 11 (Sample)', template: '%s — JEDA 11 (Sample)' },
+  description: 'Sample-only demo landing page for JEDA 11.',
   robots: { index: false, follow: false },
-  openGraph: { title: 'GIDA 11 (Sample)', type: 'website' },
-  twitter: { card: 'summary_large_image', title: 'GIDA 11 (Sample)' },
+  openGraph: { title: 'JEDA 11 (Sample)', type: 'website' },
+  twitter: { card: 'summary_large_image', title: 'JEDA 11 (Sample)' },
 }
 
 - Load Prompt/Inter via next/font.
