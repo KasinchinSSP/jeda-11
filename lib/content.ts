@@ -11,7 +11,8 @@ export const headerContent = {
 export const heroContent = {
   eyebrow: "JEDA 11 (Sample)",
   title: "โซลูชันครบวงจรสำหรับธุรกิจผลิตภัณฑ์เสริมอาหาร",
-  subtitle: "One-stop service: R&D • บรรจุภัณฑ์ • เอกสารจดแจ้ง • ผลิต • ส่งมอบ (ตัวอย่าง)",
+  subtitle:
+    "One-stop service: R&D • บรรจุภัณฑ์ • เอกสารจดแจ้ง • ผลิต • ส่งมอบ (ตัวอย่าง)",
   video: {
     landscape: {
       webm: "/videos/sample-hero-landscape.webm",
@@ -27,7 +28,7 @@ export const heroContent = {
     },
     strategy: "auto" as const,
   },
-  overlay: "medium" as const,
+  overlay: "light" as const,
 } as const;
 
 export const servicesIntroContent = {
