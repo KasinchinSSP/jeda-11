@@ -27,7 +27,7 @@ export default function ProductHighlights({ items }: ProductHighlightsProps) {
             {items.map((item) => (
               <article
                 key={item.title}
-                className="flex h-full flex-col overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-sm"
+                className="flex h-full flex-col overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-soft ring-1 ring-neutral-200/60 transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
                   <Image
@@ -46,7 +46,7 @@ export default function ProductHighlights({ items }: ProductHighlightsProps) {
                   <ul className="mt-auto space-y-2 text-sm text-neutral-600">
                     {item.spec.map((feature) => (
                       <li key={feature} className="flex items-center gap-2">
-                        <span className="h-2 w-2 rounded-full bg-neutral-900" aria-hidden />
+                        <span className="h-2 w-2 rounded-full bg-primary-600" aria-hidden />
                         {feature}
                       </li>
                     ))}

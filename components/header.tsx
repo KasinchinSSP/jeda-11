@@ -36,7 +36,7 @@ export default function Header({ nav, logoSrc }: HeaderProps) {
         </div>
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-neutral-300 text-neutral-900 sm:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-neutral-300 text-neutral-900 transition-colors hover:border-primary-600 hover:text-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 sm:hidden"
           onClick={() => setOpen((prev) => !prev)}
           aria-expanded={open}
           aria-controls="mobile-nav"
@@ -49,7 +49,7 @@ export default function Header({ nav, logoSrc }: HeaderProps) {
             const isDisabled = Boolean(item.disabled);
             const common =
               "relative inline-flex items-center gap-2 rounded-full px-4 py-2 transition-colors";
-            const enabledClasses = "hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-400";
+            const enabledClasses = "hover:bg-brandBeige focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600";
             const disabledClasses = "cursor-not-allowed text-neutral-400";
 
             if (isDisabled) {
@@ -63,7 +63,7 @@ export default function Header({ nav, logoSrc }: HeaderProps) {
 
             return (
               <Link key={item.label} href={item.href} className={`${common} ${enabledClasses}`}>
-                <span className="h-2 w-2 rounded-full bg-neutral-900" aria-hidden />
+                <span className="h-2 w-2 rounded-full bg-primary-600" aria-hidden />
                 {item.label}
               </Link>
             );
@@ -96,11 +96,11 @@ export default function Header({ nav, logoSrc }: HeaderProps) {
               <Link
                 key={item.label}
                 href={item.href}
-                className="flex items-center justify-between rounded-xl border border-neutral-200 bg-white px-4 py-3 text-neutral-900"
+                className="flex items-center justify-between rounded-xl border border-neutral-200 bg-brandBeige px-4 py-3 text-neutral-900 shadow-sm transition hover:border-primary-600 hover:text-primary-700"
                 onClick={() => setOpen(false)}
               >
                 <span>{item.label}</span>
-                <span className="h-2 w-2 rounded-full bg-neutral-900" aria-hidden />
+                <span className="h-2 w-2 rounded-full bg-primary-600" aria-hidden />
               </Link>
             );
           })}

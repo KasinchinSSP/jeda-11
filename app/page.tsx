@@ -92,14 +92,14 @@ export default function Home() {
 
       {!bannerDismissed ? (
         <div className="fixed inset-x-0 bottom-0 px-4 pb-4 sm:px-6 sm:pb-6">
-          <div className="mx-auto flex max-w-7xl items-start justify-between gap-4 rounded-2xl border border-neutral-200 bg-white/90 px-4 py-4 text-sm text-neutral-900 shadow-lg backdrop-blur">
+          <div className="mx-auto flex max-w-7xl items-start justify-between gap-4 rounded-2xl border border-neutral-300/70 bg-white/95 px-4 py-4 text-sm text-neutral-800 shadow-lg backdrop-blur">
             <p className="flex-1 leading-relaxed">
               หน้านี้เป็นเพียงตัวอย่างเพื่อการสาธิตเท่านั้น
             </p>
             <button
               type="button"
               onClick={() => setBannerDismissed(true)}
-              className="rounded-full border border-neutral-300 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-neutral-700 transition hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-500"
+              className="rounded-full border border-primary-600/30 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-primary-700 transition hover:bg-brandBeige focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
             >
               X
             </button>

@@ -24,10 +24,10 @@ export default function ServicesIntro({ title, intro, services, note }: Services
             {services.map((service) => (
               <article
                 key={service.title}
-                className="flex h-full flex-col gap-4 rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
+                className="flex h-full flex-col gap-4 rounded-3xl border border-neutral-200 bg-white p-6 shadow-soft ring-1 ring-neutral-200/60 transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
-                <span className="flex h-12 w-12 items-center justify-center rounded-full border border-neutral-200 bg-neutral-100">
-                  <span className="h-3 w-3 rounded-full bg-neutral-900" aria-hidden />
+                <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-primary-600/20 bg-primary-600/10 text-primary-700 shadow-soft">
+                  <span className="h-3 w-3 rounded-full bg-primary-600" aria-hidden />
                   <span className="sr-only">{service.icon}</span>
                 </span>
                 <div className="space-y-2">

@@ -25,7 +25,7 @@ export default function TrustBar({ logos, badges, caption }: TrustBarProps) {
             {logos.map((logo) => (
               <div
                 key={logo.src}
-                className="relative h-12 w-28 shrink-0 rounded-xl border border-neutral-200 bg-white px-4 py-2 shadow-sm"
+                className="relative h-12 w-28 shrink-0 rounded-xl border border-neutral-200 bg-white px-4 py-2 shadow-soft ring-1 ring-neutral-200/60"
               >
                 <Image src={logo.src} alt={logo.alt} fill sizes="112px" className="object-contain" />
               </div>
@@ -36,9 +36,9 @@ export default function TrustBar({ logos, badges, caption }: TrustBarProps) {
               {badges.map((badge) => (
                 <span
                   key={badge.label}
-                  className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-4 py-2 text-xs uppercase tracking-[0.2em] text-neutral-500 shadow-sm"
+                  className="inline-flex items-center gap-2 rounded-full border border-neutral-200/80 bg-brandBeige px-4 py-2 text-xs uppercase tracking-[0.2em] text-neutral-700 shadow-soft"
                 >
-                  <span className="h-2 w-2 rounded-full bg-neutral-900" aria-hidden />
+                  <span className="h-2 w-2 rounded-full bg-primary-600" aria-hidden />
                   {badge.label}
                 </span>
               ))}
