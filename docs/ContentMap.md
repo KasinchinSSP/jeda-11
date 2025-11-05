@@ -1,6 +1,6 @@
 # ContentMap — JEDA 11 Website (Sample Version v1.1)
 
-> Scope: Sample-only content for demonstrating the structure and layout of the GIDA 11 website. All information below is placeholder data for demo purposes. Use with `noindex,nofollow` metadata.
+> Scope: Sample-only content for demonstrating the structure and layout of the JEDA 11 website. All information below is placeholder data for demo purposes. Use with `noindex,nofollow` metadata.
 
 ---
 
@@ -26,7 +26,7 @@ export const header = {
 
 ```ts
 export const hero = {
-  eyebrow: "GIDA 11 (Sample)",
+  eyebrow: "JEDA 11 (Sample)",
   title: "โซลูชันครบวงจรสำหรับธุรกิจผลิตภัณฑ์เสริมอาหาร",
   subtitle:
     "One-stop service: R&D • บรรจุภัณฑ์ • เอกสารจดแจ้ง • ผลิต • ส่งมอบ (ตัวอย่าง)",
@@ -216,7 +216,7 @@ export const footer = {
     { icon: "line", href: "#" },
     { icon: "mail", href: "#" },
   ],
-  legal: "© 2025 GIDA 11 (Sample). All rights reserved.",
+  legal: "© 2025 JEDA 11 (Sample). All rights reserved.",
 };
 ```
 

@@ -1,65 +1,84 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
+
+import ContactCta from "@/components/contact-cta";
+import Faq from "@/components/faq";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
+import Hero from "@/components/hero";
+import ProcessTimeline from "@/components/process-timeline";
+import ProductHighlights from "@/components/product-highlights";
+import ServicesIntro from "@/components/services-intro";
+import TrustBar from "@/components/trust-bar";
+import { siteContent } from "@/lib/content";
 
 export default function Home() {
+  const [bannerDismissed, setBannerDismissed] = useState(false);
+  const { header, hero, servicesIntro, productHighlights, processTimeline, trustBar, faq, contactCta, footer } = siteContent;
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="min-h-screen bg-slate-950 text-white">
+      <Header {...header} />
+      <main className="flex flex-col">
+        <section aria-label="Hero section" className="scroll-mt-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <Hero {...hero} />
+          </div>
+        </section>
+
+        <section id="about" aria-label="Services overview" className="scroll-mt-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ServicesIntro {...servicesIntro} />
+          </div>
+        </section>
+
+        <section id="products" aria-label="Product highlights" className="scroll-mt-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ProductHighlights {...productHighlights} />
+          </div>
+        </section>
+
+        <section aria-label="Process timeline" className="scroll-mt-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ProcessTimeline {...processTimeline} />
+          </div>
+        </section>
+
+        <section aria-label="Trust bar" className="scroll-mt-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <TrustBar {...trustBar} />
+          </div>
+        </section>
+
+        <section aria-label="Frequently asked questions" className="scroll-mt-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <Faq {...faq} />
+          </div>
+        </section>
+
+        <section id="contact" aria-label="Contact call to action" className="scroll-mt-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ContactCta {...contactCta} />
+          </div>
+        </section>
       </main>
+      <Footer {...footer} />
+
+      {!bannerDismissed ? (
+        <div className="fixed inset-x-0 bottom-0 px-4 pb-4 sm:px-6 sm:pb-6">
+          <div className="mx-auto flex max-w-7xl items-start justify-between gap-4 rounded-2xl border border-white/10 bg-slate-900/90 px-4 py-4 text-sm text-white shadow-lg backdrop-blur">
+            <p className="flex-1 leading-relaxed">หน้านี้เป็นตัวอย่าง (Sample) เพื่อการสาธิตเท่านั้น</p>
+            <button
+              type="button"
+              onClick={() => setBannerDismissed(true)}
+              className="rounded-full border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              ปิด
+            </button>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }
