@@ -5,14 +5,14 @@ export const headerContent = {
     { label: "About", href: "#" },
     { label: "Contact", href: "#" },
   ],
-  logoSrc: "/images/sample-logo.svg",
+  logoSrc: "/images/sample-logo.png",
 } as const;
 
 export const heroContent = {
-  eyebrow: "JEDA 11 (Sample)",
-  title: "โซลูชันครบวงจรสำหรับธุรกิจผลิตภัณฑ์เสริมอาหาร",
-  subtitle:
-    "One-stop service: R&D • บรรจุภัณฑ์ • เอกสารจดแจ้ง • ผลิต • ส่งมอบ (ตัวอย่าง)",
+  eyebrow: "JEDA 11",
+  title:
+    "โรงงานผู้เชี่ยวชาญผลิตสินค้าและสร้างแบรนด์ อาหารเสริมเพื่อสุขภาพ พร้อมทำการตลาดครบวงจร",
+  subtitle: "One-stop service: R&D • บรรจุภัณฑ์ • เอกสารจดแจ้ง • ผลิต • ส่งมอบ",
   video: {
     landscape: {
       webm: "/videos/sample-hero-landscape.webm",
@@ -32,7 +32,7 @@ export const heroContent = {
 } as const;
 
 export const servicesIntroContent = {
-  title: "One-Stop Service ครบวงจร (Sample)",
+  title: "One-Stop Service ครบวงจร",
   intro:
     "เราดูแลตั้งแต่แนวคิดจนถึงสินค้าพร้อมขาย ครอบคลุมงานวิจัย พัฒนา ผลิต และจดทะเบียนที่เกี่ยวข้อง (ตัวอย่าง)",
   services: [
@@ -64,21 +64,21 @@ export const servicesIntroContent = {
 export const productHighlightsContent = {
   items: [
     {
-      title: "Capsule Line (Sample)",
+      title: "Capsule Line",
       description: "สูตรแคปซูลมาตรฐาน รองรับการผลิตขนาดใหญ่ (ตัวอย่าง)",
       image: "/images/sample-product-capsule.jpg",
       imageAlt: "ผลิตภัณฑ์แคปซูล (ตัวอย่าง)",
       spec: ["MOQ 5,000 units", "Lead time 30–45 days"],
     },
     {
-      title: "Powder/Drink Line (Sample)",
+      title: "Powder/Drink Line",
       description: "ผลิตภัณฑ์ผงละลายน้ำ รสชาติดีและละลายง่าย (ตัวอย่าง)",
       image: "/images/sample-product-powder.jpg",
       imageAlt: "ผลิตภัณฑ์ผงชงดื่ม (ตัวอย่าง)",
       spec: ["MOQ 10,000 sachets", "Flavor lab support"],
     },
     {
-      title: "Skin/Topical Line (Sample)",
+      title: "Skin/Topical Line",
       description: "สกินแคร์/ครีมบำรุงผิว มาตรฐานความปลอดภัยสูง (ตัวอย่าง)",
       image: "/images/sample-product-skin.jpg",
       imageAlt: "ผลิตภัณฑ์ดูแลผิว (ตัวอย่าง)",
@@ -88,40 +88,40 @@ export const productHighlightsContent = {
 } as const;
 
 export const processTimelineContent = {
-  title: "ขั้นตอนการทำงาน (Sample)",
+  title: "ขั้นตอนการทำงาน",
   steps: [
-    { index: 1, title: "ออกแบบและพัฒนาสูตรผลิตภัณฑ์ (Sample)", icon: "pencil" },
-    { index: 2, title: "ทดลอง/ทดสอบสินค้า (Sample)", icon: "beaker" },
-    { index: 3, title: "เตรียมเอกสารยื่นจดแจ้ง (Sample)", icon: "file-text" },
-    { index: 4, title: "ลงมือผลิตสินค้า (Sample)", icon: "factory" },
-    { index: 5, title: "ส่งมอบสินค้า (Sample)", icon: "truck" },
+    { index: 1, title: "ออกแบบและพัฒนาสูตรผลิตภัณฑ์", icon: "pencil" },
+    { index: 2, title: "ทดลอง/ทดสอบสินค้า", icon: "beaker" },
+    { index: 3, title: "เตรียมเอกสารยื่นจดแจ้ง", icon: "file-text" },
+    { index: 4, title: "ลงมือผลิตสินค้า", icon: "factory" },
+    { index: 5, title: "ส่งมอบสินค้า", icon: "truck" },
   ],
 } as const;
 
 export const trustBarContent = {
   logos: [
-    { src: "/images/logos/sample-gmp.svg", alt: "GMP (Sample)" },
-    { src: "/images/logos/sample-haccp.svg", alt: "HACCP (Sample)" },
-    { src: "/images/logos/sample-iso.svg", alt: "ISO (Sample)" },
+    { src: "/images/logos/sample-gmp.svg", alt: "GMP" },
+    { src: "/images/logos/sample-haccp.svg", alt: "HACCP" },
+    { src: "/images/logos/sample-iso.svg", alt: "ISO" },
   ],
   badges: [{ label: "GMP" }, { label: "HACCP" }, { label: "ISO 9001" }],
   caption: "ตัวอย่างสัญลักษณ์มาตรฐานการผลิต",
 } as const;
 
 export const faqContent = {
-  title: "คำถามที่พบบ่อย (Sample)",
+  title: "คำถามที่พบบ่อย",
   items: [
-    { q: "ขั้นต่ำการผลิตเท่าไร?", a: "ขึ้นกับประเภทสินค้า (Sample)" },
-    { q: "ระยะเวลา R&D นานแค่ไหน?", a: "โดยทั่วไป 2–6 สัปดาห์ (Sample)" },
-    { q: "ต้องเตรียมอะไรบ้าง?", a: "กลุ่มลูกค้าและงบประมาณ (Sample)" },
-    { q: "มีบริการขึ้นทะเบียนไหม?", a: "มีในขอบเขตสาธิตนี้ (Sample)" },
-    { q: "คิดค่าบริการอย่างไร?", a: "ขึ้นกับปริมาณการผลิต (Sample)" },
+    { q: "ขั้นต่ำการผลิตเท่าไร?", a: "ขึ้นกับประเภทสินค้า" },
+    { q: "ระยะเวลา R&D นานแค่ไหน?", a: "โดยทั่วไป 2–6 สัปดาห์" },
+    { q: "ต้องเตรียมอะไรบ้าง?", a: "กลุ่มลูกค้าและงบประมาณ" },
+    { q: "มีบริการขึ้นทะเบียนไหม?", a: "มีในขอบเขตสาธิตนี้" },
+    { q: "คิดค่าบริการอย่างไร?", a: "ขึ้นกับปริมาณการผลิต" },
   ],
 } as const;
 
 export const contactCtaContent = {
-  title: "เริ่มโครงการของคุณวันนี้ (Sample)",
-  subtitle: "ติดต่อเพื่อประเมินราคาเบื้องต้น (Sample)",
+  title: "เริ่มโครงการของคุณวันนี้",
+  subtitle: "ติดต่อเพื่อประเมินราคาเบื้องต้น",
   ctas: [
     { label: "โทรเลย", href: "#" },
     { label: "อีเมล", href: "#" },
@@ -133,10 +133,10 @@ export const contactCtaContent = {
 } as const;
 
 export const footerContent = {
-  address: "123/45 Sample Road, Bangkok 00000 (Sample)",
+  address: "123/45 Sample Road, Bangkok 00000",
   columns: [
     {
-      title: "About (Sample)",
+      title: "About",
       links: [
         { label: "เกี่ยวกับเรา", href: "#" },
         { label: "บริการ", href: "#" },
@@ -144,7 +144,7 @@ export const footerContent = {
       ],
     },
     {
-      title: "Resources (Sample)",
+      title: "Resources",
       links: [
         { label: "นโยบายความเป็นส่วนตัว", href: "#" },
         { label: "ข้อกำหนดการใช้งาน", href: "#" },
@@ -156,7 +156,7 @@ export const footerContent = {
     { icon: "line", href: "#" },
     { icon: "mail", href: "#" },
   ],
-  legal: "© 2025 JEDA 11 (Sample). All rights reserved.",
+  legal: "© 2025 JEDA 11. All rights reserved.",
 } as const;
 
 export const siteContent = {
