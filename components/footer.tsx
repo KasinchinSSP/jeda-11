@@ -24,21 +24,21 @@ export type FooterProps = {
 
 export default function Footer({ address, columns, socials, legal }: FooterProps) {
   return (
-    <footer className="bg-slate-950 text-white">
+    <footer className="bg-neutral-50 text-neutral-900">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
         <div className="grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold">JEDA 11 (Sample)</h2>
-            <p className="max-w-sm text-sm text-white/70 sm:text-base">{address}</p>
+            <p className="max-w-sm text-sm text-neutral-600 sm:text-base">{address}</p>
             <div className="flex flex-wrap items-center gap-3">
               {socials.map((social) => (
                 <Link
                   key={social.icon}
                   href={social.href}
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-sm text-white transition-colors hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 bg-white text-sm text-neutral-900 transition-colors hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-400"
                   aria-label={social.icon}
                 >
-                  <span className="h-2 w-2 rounded-full bg-white" aria-hidden />
+                  <span className="h-2 w-2 rounded-full bg-neutral-900" aria-hidden />
                 </Link>
               ))}
             </div>
@@ -46,15 +46,15 @@ export default function Footer({ address, columns, socials, legal }: FooterProps
           <div className="grid gap-8 sm:grid-cols-2">
             {columns.map((column) => (
               <div key={column.title} className="space-y-4">
-                <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/60">{column.title}</h3>
-                <ul className="space-y-3 text-sm text-white/70">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-neutral-500">{column.title}</h3>
+                <ul className="space-y-3 text-sm text-neutral-600">
                   {column.links.map((link) => (
                     <li key={link.label}>
                       <Link
                         href={link.href}
-                        className="inline-flex items-center gap-2 rounded-full px-2 py-1 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="inline-flex items-center gap-2 rounded-full px-2 py-1 transition-colors hover:text-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-400"
                       >
-                        <span className="h-1.5 w-1.5 rounded-full bg-white" aria-hidden />
+                        <span className="h-1.5 w-1.5 rounded-full bg-neutral-900" aria-hidden />
                         {link.label}
                       </Link>
                     </li>
@@ -64,7 +64,7 @@ export default function Footer({ address, columns, socials, legal }: FooterProps
             ))}
           </div>
         </div>
-        <div className="mt-10 border-t border-white/10 pt-6 text-sm text-white/60">{legal}</div>
+        <div className="mt-10 border-t border-neutral-200 pt-6 text-sm text-neutral-500">{legal}</div>
       </div>
     </footer>
   );
