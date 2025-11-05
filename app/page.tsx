@@ -15,7 +15,17 @@ import { siteContent } from "@/lib/content";
 
 export default function Home() {
   const [bannerDismissed, setBannerDismissed] = useState(false);
-  const { header, hero, servicesIntro, productHighlights, processTimeline, trustBar, faq, contactCta, footer } = siteContent;
+  const {
+    header,
+    hero,
+    servicesIntro,
+    productHighlights,
+    processTimeline,
+    trustBar,
+    faq,
+    contactCta,
+    footer,
+  } = siteContent;
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
@@ -27,13 +37,21 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" aria-label="Services overview" className="scroll-mt-24">
+        <section
+          id="about"
+          aria-label="Services overview"
+          className="scroll-mt-24"
+        >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <ServicesIntro {...servicesIntro} />
           </div>
         </section>
 
-        <section id="products" aria-label="Product highlights" className="scroll-mt-24">
+        <section
+          id="products"
+          aria-label="Product highlights"
+          className="scroll-mt-24"
+        >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <ProductHighlights {...productHighlights} />
           </div>
@@ -51,13 +69,20 @@ export default function Home() {
           </div>
         </section>
 
-        <section aria-label="Frequently asked questions" className="scroll-mt-24">
+        <section
+          aria-label="Frequently asked questions"
+          className="scroll-mt-24"
+        >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <Faq {...faq} />
           </div>
         </section>
 
-        <section id="contact" aria-label="Contact call to action" className="scroll-mt-24">
+        <section
+          id="contact"
+          aria-label="Contact call to action"
+          className="scroll-mt-24"
+        >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <ContactCta {...contactCta} />
           </div>
@@ -68,13 +93,15 @@ export default function Home() {
       {!bannerDismissed ? (
         <div className="fixed inset-x-0 bottom-0 px-4 pb-4 sm:px-6 sm:pb-6">
           <div className="mx-auto flex max-w-7xl items-start justify-between gap-4 rounded-2xl border border-white/10 bg-slate-900/90 px-4 py-4 text-sm text-white shadow-lg backdrop-blur">
-            <p className="flex-1 leading-relaxed">หน้านี้เป็นตัวอย่าง (Sample) เพื่อการสาธิตเท่านั้น</p>
+            <p className="flex-1 leading-relaxed">
+              หน้านี้เป็นเพียงตัวอย่างเพื่อการสาธิตเท่านั้น
+            </p>
             <button
               type="button"
               onClick={() => setBannerDismissed(true)}
               className="rounded-full border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              ปิด
+              X
             </button>
           </div>
         </div>

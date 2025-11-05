@@ -10,9 +10,9 @@ export const headerContent = {
 
 export const heroContent = {
   eyebrow: "JEDA 11",
-  title:
-    "โรงงานผู้เชี่ยวชาญผลิตสินค้าและสร้างแบรนด์ อาหารเสริมเพื่อสุขภาพ พร้อมทำการตลาดครบวงจร",
-  subtitle: "One-stop service: R&D • บรรจุภัณฑ์ • เอกสารจดแจ้ง • ผลิต • ส่งมอบ",
+  title: "ผลิตสิ่งดีดีจากใจ ส่งมอบให้ผู้ที่รักสุขภาพ",
+  subtitle:
+    "JEDA 11 โรงงานผู้เชี่ยวชาญผลิตสินค้า และสร้างแบรนด์อาหารเสริมเพื่อสุขภาพ พร้อมทำการตลาดครบวงจร",
   video: {
     landscape: {
       webm: "/videos/sample-hero-landscape.webm",
@@ -34,7 +34,7 @@ export const heroContent = {
 export const servicesIntroContent = {
   title: "One-Stop Service ครบวงจร",
   intro:
-    "เราดูแลตั้งแต่แนวคิดจนถึงสินค้าพร้อมขาย ครอบคลุมงานวิจัย พัฒนา ผลิต และจดทะเบียนที่เกี่ยวข้อง (ตัวอย่าง)",
+    "เราดูแลตั้งแต่แนวคิดจนถึงสินค้าพร้อมขาย ครอบคลุมงานวิจัย พัฒนา ผลิต และจดทะเบียนที่เกี่ยวข้อง",
   services: [
     {
       title: "ผลิตสินค้าอาหารเสริม (OEM/ODM)",
@@ -65,23 +65,23 @@ export const productHighlightsContent = {
   items: [
     {
       title: "Capsule Line",
-      description: "สูตรแคปซูลมาตรฐาน รองรับการผลิตขนาดใหญ่ (ตัวอย่าง)",
+      description: "สูตรแคปซูลมาตรฐาน รองรับการผลิตขนาดใหญ่",
       image: "/images/sample-product-capsule.jpg",
-      imageAlt: "ผลิตภัณฑ์แคปซูล (ตัวอย่าง)",
+      imageAlt: "ผลิตภัณฑ์แคปซูล",
       spec: ["MOQ 5,000 units", "Lead time 30–45 days"],
     },
     {
       title: "Powder/Drink Line",
-      description: "ผลิตภัณฑ์ผงละลายน้ำ รสชาติดีและละลายง่าย (ตัวอย่าง)",
+      description: "ผลิตภัณฑ์ผงละลายน้ำ รสชาติดีและละลายง่าย",
       image: "/images/sample-product-powder.jpg",
-      imageAlt: "ผลิตภัณฑ์ผงชงดื่ม (ตัวอย่าง)",
+      imageAlt: "ผลิตภัณฑ์ผงชงดื่ม",
       spec: ["MOQ 10,000 sachets", "Flavor lab support"],
     },
     {
       title: "Skin/Topical Line",
-      description: "สกินแคร์/ครีมบำรุงผิว มาตรฐานความปลอดภัยสูง (ตัวอย่าง)",
+      description: "สกินแคร์/ครีมบำรุงผิว มาตรฐานความปลอดภัยสูง",
       image: "/images/sample-product-skin.jpg",
-      imageAlt: "ผลิตภัณฑ์ดูแลผิว (ตัวอย่าง)",
+      imageAlt: "ผลิตภัณฑ์ดูแลผิว",
       spec: ["Stability test", "Compliance checklist"],
     },
   ],
@@ -128,7 +128,7 @@ export const contactCtaContent = {
     { label: "เพิ่มไลน์", href: "#" },
   ],
   qrImageSrc: "/images/sample-qr.png",
-  qrAlt: "QR Code สำหรับติดต่อ (ตัวอย่าง)",
+  qrAlt: "QR Code สำหรับติดต่อ",
   note: "ปุ่มทั้งหมดเป็นตัวอย่างเท่านั้น",
 } as const;
 
