@@ -20,9 +20,9 @@ export type HeroProps = {
 };
 
 const overlayStyles: Record<HeroProps["overlay"], string> = {
-  light: "bg-neutral-950/40",
-  medium: "bg-neutral-950/55",
-  strong: "bg-neutral-950/70",
+  light: "bg-neutral-950/20",
+  medium: "bg-neutral-950/40",
+  strong: "bg-neutral-950/60",
 };
 
 export default function Hero({
@@ -123,7 +123,10 @@ export default function Hero({
           </p>
           <div className="flex flex-wrap items-center gap-3 text-sm text-white/80">
             <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2">
-              <span className="h-2 w-2 rounded-full bg-primary-600" aria-hidden />
+              <span
+                className="h-2 w-2 rounded-full bg-primary-600"
+                aria-hidden
+              />
               ปรึกษาฟรี ไม่มีค่าใช้จ่าย
             </span>
             <span className="hidden items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 sm:inline-flex">
