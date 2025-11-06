@@ -32,7 +32,7 @@ export default function Home() {
       <Header {...header} />
       <main className="flex flex-col">
         <section aria-label="Hero section" className="scroll-mt-24">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl sm:px-4 lg:px-6">
             <Hero {...hero} />
           </div>
         </section>
