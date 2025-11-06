@@ -106,9 +106,9 @@ export default function Hero({
         />
         <div className="absolute inset-0 bg-neutral-800/15" aria-hidden />
       </div>
-      <div className="mx-auto w-full max-w-7xl py-16 sm:px-4 md:py-24 lg:px-6">
+      <div className="mx-auto w-full max-w-7xl text-center md:text-start py-16 sm:px-4 md:py-24 lg:px-6">
         <div className="flex max-w-2xl flex-col gap-6 bg-neutral-800/15 p-8 text-white shadow-xl backdrop-blur-sm md:gap-8 md:p-10">
-          <span className="inline-flex max-w-max items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/80">
+          <span className="inline-flex max-w-max mx-auto md:mx-0 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/80">
             <span className="h-2 w-2 rounded-full bg-accent-400" aria-hidden />
             {eyebrow}
           </span>
@@ -118,7 +118,7 @@ export default function Hero({
           <p className="max-w-2xl text-base text-white/85 sm:text-lg">
             {subtitle}
           </p>
-          <div className="flex flex-wrap items-center gap-3 text-sm text-white/80">
+          <div className="flex flex-wrap mx-auto md:mx-0 items-center gap-3 text-sm text-white/80">
             <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2">
               <span
                 className="h-2 w-2 rounded-full bg-primary-600"
