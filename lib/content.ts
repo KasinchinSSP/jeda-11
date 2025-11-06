@@ -58,7 +58,6 @@ export const servicesIntroContent = {
       icon: "file-check",
     },
   ],
-  note: "เนื้อหานี้ใช้เพื่อสาธิตเท่านั้น",
 } as const;
 
 export const productHighlightsContent = {
@@ -105,7 +104,7 @@ export const trustBarContent = {
     { src: "/images/logos/sample-iso.svg", alt: "ISO" },
   ],
   badges: [{ label: "GMP" }, { label: "HACCP" }, { label: "ISO 9001" }],
-  caption: "ตัวอย่างสัญลักษณ์มาตรฐานการผลิต",
+  caption: "มาตรฐานการผลิต",
 } as const;
 
 export const faqContent = {
