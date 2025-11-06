@@ -36,7 +36,7 @@ export default function ServicesIntro({
                 key={service.title}
                 className="flex h-full flex-col gap-4 rounded-3xl border border-neutral-200 bg-white p-6 shadow-soft ring-1 ring-neutral-200/60 transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
-                <div className="mx-auto flex h-20 w-20 items-center justify-center overflow-hidden rounded-2xl border border-primary-600/10 bg-primary-50 shadow-soft sm:h-24 sm:w-24">
+                <div className="mx-auto flex h-20 w-20 items-center justify-center overflow-hidden rounded-2xl sm:h-24 sm:w-24">
                   <Image
                     src={service.imageSrc}
                     alt={service.imageAlt}
