@@ -91,7 +91,7 @@ export default function Home() {
       <Footer {...footer} />
 
       {!bannerDismissed ? (
-        <div className="fixed inset-x-0 bottom-0 px-4 pb-4 sm:px-6 sm:pb-6">
+        <div className="hidden fixed inset-x-0 bottom-0 px-4 pb-4 sm:px-6 sm:pb-6">
           <div className="mx-auto flex max-w-7xl items-start justify-between gap-4 rounded-2xl border border-neutral-300/70 bg-white/95 px-4 py-4 text-sm text-neutral-800 shadow-lg backdrop-blur">
             <p className="flex-1 leading-relaxed">
               หน้านี้เป็นเพียงตัวอย่างเพื่อการสาธิตเท่านั้น
