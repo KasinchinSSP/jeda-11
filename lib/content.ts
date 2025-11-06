@@ -39,23 +39,32 @@ export const servicesIntroContent = {
     {
       title: "ผลิตสินค้าอาหารเสริม (OEM/ODM)",
       desc: "ไลน์ผลิตมาตรฐาน รองรับปริมาณสูง",
-      icon: "factory",
+      imageSrc: "/images/services/oem.svg",
+      imageAlt: "ไลน์ผลิตสินค้าในโรงงาน",
     },
     {
       title: "วิจัยและพัฒนาสูตร (R&D)",
       desc: "ทีมวิจัย ทดลอง และปรับรสชาติ",
-      icon: "flask",
+      imageSrc: "/images/services/rd.svg",
+      imageAlt: "อุปกรณ์วิจัยและทดลองสูตร",
     },
-    { title: "ออกแบบบรรจุภัณฑ์", desc: "ดีไซน์แพ็กเกจจิงครบวงจร", icon: "box" },
+    {
+      title: "ออกแบบบรรจุภัณฑ์",
+      desc: "ดีไซน์แพ็กเกจจิงครบวงจร",
+      imageSrc: "/images/services/packaging.svg",
+      imageAlt: "กล่องบรรจุภัณฑ์ดีไซน์ร่วมสมัย",
+    },
     {
       title: "ที่ปรึกษาสร้างธุรกิจและแบรนด์",
       desc: "กลยุทธ์ตลาดและแบรนด์ดิ้ง",
-      icon: "briefcase",
+      imageSrc: "/images/services/consulting.svg",
+      imageAlt: "ทีมที่ปรึกษาธุรกิจกำลังวางแผน",
     },
     {
       title: "จดทะเบียน อย. และนิติบุคคล",
       desc: "เอกสารและกระบวนการครบถ้วน",
-      icon: "file-check",
+      imageSrc: "/images/services/compliance.svg",
+      imageAlt: "เอกสารการรับรองและเครื่องหมายถูก",
     },
   ],
 } as const;
