@@ -22,7 +22,7 @@ export default function Header({ nav, logoSrc }: HeaderProps) {
     <header className="top-0 z-50 border-b border-neutral-200 bg-neutral-50/80 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3">
-          <div className="relative h-10 w-32">
+          <div className="relative h-10 w-10 sm:h-12 sm:w-12">
             <Image
               src={logoSrc}
               alt="JEDA 11 Sample Logo"
