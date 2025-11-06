@@ -19,7 +19,7 @@ export default function Header({ nav, logoSrc }: HeaderProps) {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-neutral-200 bg-neutral-50/80 backdrop-blur">
+    <header className="top-0 z-50 border-b border-neutral-200 bg-neutral-50/80 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3">
           <div className="relative h-10 w-32">
@@ -42,28 +42,46 @@ export default function Header({ nav, logoSrc }: HeaderProps) {
           aria-controls="mobile-nav"
         >
           <span className="sr-only">Toggle navigation</span>
-          <span className="h-0.5 w-5 bg-current text-neutral-900 shadow-[0_6px_0_0_currentColor,0_-6px_0_0_currentColor]" aria-hidden />
+          <span
+            className="h-0.5 w-5 bg-current text-neutral-900 shadow-[0_6px_0_0_currentColor,0_-6px_0_0_currentColor]"
+            aria-hidden
+          />
         </button>
         <nav className="hidden items-center gap-6 text-sm font-medium text-neutral-900 sm:flex">
           {nav.map((item) => {
             const isDisabled = Boolean(item.disabled);
             const common =
               "relative inline-flex items-center gap-2 rounded-full px-4 py-2 transition-colors";
-            const enabledClasses = "hover:bg-brandBeige focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600";
+            const enabledClasses =
+              "hover:bg-brandBeige focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600";
             const disabledClasses = "cursor-not-allowed text-neutral-400";
 
             if (isDisabled) {
               return (
-                <span key={item.label} className={`${common} ${disabledClasses}`} aria-disabled>
-                  <span className="h-2 w-2 rounded-full bg-neutral-300" aria-hidden />
+                <span
+                  key={item.label}
+                  className={`${common} ${disabledClasses}`}
+                  aria-disabled
+                >
+                  <span
+                    className="h-2 w-2 rounded-full bg-neutral-300"
+                    aria-hidden
+                  />
                   {item.label}
                 </span>
               );
             }
 
             return (
-              <Link key={item.label} href={item.href} className={`${common} ${enabledClasses}`}>
-                <span className="h-2 w-2 rounded-full bg-primary-600" aria-hidden />
+              <Link
+                key={item.label}
+                href={item.href}
+                className={`${common} ${enabledClasses}`}
+              >
+                <span
+                  className="h-2 w-2 rounded-full bg-primary-600"
+                  aria-hidden
+                />
                 {item.label}
               </Link>
             );
@@ -87,7 +105,10 @@ export default function Header({ nav, logoSrc }: HeaderProps) {
                   aria-disabled
                 >
                   <span>{item.label}</span>
-                  <span className="h-2 w-2 rounded-full bg-neutral-300" aria-hidden />
+                  <span
+                    className="h-2 w-2 rounded-full bg-neutral-300"
+                    aria-hidden
+                  />
                 </span>
               );
             }
@@ -100,7 +121,10 @@ export default function Header({ nav, logoSrc }: HeaderProps) {
                 onClick={() => setOpen(false)}
               >
                 <span>{item.label}</span>
-                <span className="h-2 w-2 rounded-full bg-primary-600" aria-hidden />
+                <span
+                  className="h-2 w-2 rounded-full bg-primary-600"
+                  aria-hidden
+                />
               </Link>
             );
           })}
