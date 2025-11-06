@@ -20,9 +20,9 @@ export type HeroProps = {
 };
 
 const overlayStyles: Record<HeroProps["overlay"], string> = {
-  light: "bg-slate-950/30",
-  medium: "bg-slate-950/50",
-  strong: "bg-slate-950/70",
+  light: "bg-neutral-800/15",
+  medium: "bg-neutral-800/30",
+  strong: "bg-neutral-800/60",
 };
 
 export default function Hero({
@@ -101,30 +101,36 @@ export default function Hero({
           aria-hidden
         />
         <div
-          className="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/40 to-slate-950"
+          className="absolute inset-0 bg-gradient-hero opacity-80 mix-blend-soft-light"
           aria-hidden
         />
+        <div className="absolute inset-0 bg-neutral-800/15" aria-hidden />
       </div>
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 py-16 text-white sm:px-6 md:gap-8 md:py-24 lg:px-8">
-        <span className="inline-flex max-w-max items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/70">
-          <span className="h-2 w-2 rounded-full bg-white" aria-hidden />
-          {eyebrow}
-        </span>
-        <h1 className="text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-          {title}
-        </h1>
-        <p className="max-w-2xl text-base text-white/80 sm:text-lg">
-          {subtitle}
-        </p>
-        <div className=" flex flex-wrap items-center gap-4 text-sm text-white/70">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-4 py-2">
-            <span className="h-2 w-2 rounded-full bg-white" aria-hidden />
-            ปรึกษาฟรี ไม่มีค่าใช้จ่าย
+      <div className="mx-auto w-full max-w-7xl text-center md:text-start py-16 sm:px-4 md:py-24 lg:px-6">
+        <div className="flex max-w-2xl flex-col gap-6 bg-neutral-800/15 p-8 text-white shadow-xl backdrop-blur-sm md:gap-8 md:p-10">
+          <span className="inline-flex max-w-max mx-auto md:mx-0 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/80">
+            <span className="h-2 w-2 rounded-full bg-accent-400" aria-hidden />
+            {eyebrow}
           </span>
-          <span className="hidden inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2">
-            <span className="h-2 w-2 rounded-full bg-white/60" aria-hidden />
-            ข้อมูลเพื่อการสาธิตเท่านั้น
-          </span>
+          <h1 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
+            {title}
+          </h1>
+          <p className="max-w-2xl text-base text-white/85 sm:text-lg">
+            {subtitle}
+          </p>
+          <div className="flex flex-wrap mx-auto md:mx-0 items-center gap-3 text-sm text-white/80">
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2">
+              <span
+                className="h-2 w-2 rounded-full bg-primary-600"
+                aria-hidden
+              />
+              ปรึกษาฟรี ไม่มีค่าใช้จ่าย
+            </span>
+            <span className="hidden items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 sm:inline-flex">
+              <span className="h-2 w-2 rounded-full bg-white/70" aria-hidden />
+              ข้อมูลเพื่อการสาธิตเท่านั้น
+            </span>
+          </div>
         </div>
       </div>
     </section>
